@@ -20,6 +20,7 @@ export default function LoginPage() {
       setError("帳號或密碼未輸入");
       return;
     }
+    e.preventDefault();
     setError(null);
     login(username, password).then((data) => {
       if (data.ok === 0) {
