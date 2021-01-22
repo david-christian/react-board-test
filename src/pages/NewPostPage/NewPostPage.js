@@ -34,16 +34,23 @@ const SubmitButton = styled.button`
   float: right;
   margin-top: 30px;
 `;
+
+const NewPostError = styled.div`
+  color: red;
+`;
 export default function NewPostPage() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [newPostError, setNewPostError] = useState("");
   const history = useHistory();
-  const handleNewPostSubmit = () => {
+  const handleNewPostSubmit = (e) => {
+    if (title === "" && content === "") {
+      e.preventDefault();
+      setNewPostError("標題或內容不得為空");
+      return;
+    }
+    e.preventDefault();
     sendPost(title, content).then((res) => {
-      if (res.ok === 0) {
-        return setNewPostError(res.message);
-      }
       history.push("/");
     });
   };
@@ -58,7 +65,7 @@ export default function NewPostPage() {
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
-        {newPostError && newPostError}
+        <NewPostError>{newPostError && newPostError}</NewPostError>
         <SubmitButton>送出文章</SubmitButton>
       </form>
     </NewPostBlock>
