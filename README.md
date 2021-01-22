@@ -22,7 +22,33 @@ password：Lidemy
 
 登入介面  
 
-![](https://lh3.googleusercontent.com/TG53aZbcx3x70HiY2faAYJvFQaW1ZW2zuOp7QHPOqRSypRQzRzBkqvmk2YqLuIqtjD3GnWUZRrp1Kii4qpOBSyyDyhaI-N-VXm3D6A_nXs2Xfo1ssYjYDbucfgHfaixR6VKB3Jap=w600)
+![](https://lh3.googleusercontent.com/cz6BX7xQyQwnZII-TnUOtOuo0QdJhS6lw1XMQfs8uMSbiX0Iy2zWo159ywYlhk54zE3G3ssDqfKftVGx-UE9lyk_4wrt_6iqW1AbL-AIKZU6yXVGkVfPmojJhGhIPQFg4iznxzEF=w600)  
+
+
+---
+
+註冊介面  
+
+![](https://lh3.googleusercontent.com/2VcObveLNZXA_c9x1BNZrJhkuHy4Fg6kFC8ees1me7wfXOVthVJ6uiIR-RjJ_d8-AXSI_UJHqCG5zivkE3aJeCUzOWD1hWKOf9YV70g3q9T9VWWBUaXuhzGqKwLm4eXye2640vQp=w600)  
+
+
+---
+
+發佈文章介面  
+
+![](https://lh3.googleusercontent.com/e0GJJLUSHE-RtG7P42O0bNS2st0UH6CocovStol8jtKFEiRYviBpVE2xkOt8dkptH-pmejspWa70m8VPB6WbybaBElGI0zm6pOOIj5HOWj_MgNXR3hm1U8_QJYNxToRoKlGTDBTl=w600)  
+
+---
+
+編輯文章介面  
+
+![](https://lh3.googleusercontent.com/Fo_cS35rWQPOuVj9qsJHxdMsn77QYo_g3RIsZwMAHXwauIJpth5Cfif85nPWu35DvnWc9fK6nBMF8frJqSVrgF_UYETZPWp1V3JVhj5JiULPNRGHPLNhoBmD29KPtqXVjDNqOLb0=w600)  
+
+---  
+
+[Lidemy 提供的 JSON server ](https://github.com/Lidemy/lidemy-student-json-api-server)
+
+
 
 
 
