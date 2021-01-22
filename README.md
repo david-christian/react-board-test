@@ -6,4 +6,18 @@
 
 
 以 React Hook function component 的前端框架實作出 Single Page Application 的  
-留言板網站，帳號系統的部分，透過串接 JSON server 提供的 API，來達到實作。
+留言板網站，帳號系統及資料庫，透過串接 JSON server 提供的 API，來達到實作。  
+
+---
+
+測試帳號  
+username：user01
+password：Lidemy
+
+注意：因為僅為練習作品這個 server 的密碼是用明文儲存，所以會統一在後端把密碼改成 Lidemy，因此每個 user 的密碼都會一樣。  
+
+---
+
+
+
+
