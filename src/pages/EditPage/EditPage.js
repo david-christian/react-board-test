@@ -37,6 +37,10 @@ const EditButton = styled.button`
   margin-top: 30px;
 `;
 
+const EditError = styled.div`
+  color: red;
+`;
+
 export default function EditPage() {
   const [editTitle, setEditTitle] = useState("");
   const [editContent, setEditContent] = useState("");
@@ -44,11 +48,14 @@ export default function EditPage() {
   const { id } = useParams();
   const history = useHistory();
 
-  const handleEditSubmit = () => {
+  const handleEditSubmit = (e) => {
+    if (editTitle === "" && editContent === "") {
+      e.preventDefault();
+      setEditError("標題或內容不得為空");
+      return;
+    }
+    e.preventDefault();
     editPost(editTitle, editContent, id).then((res) => {
-      if (res.ok === 0) {
-        return setEditError(res.message);
-      }
       history.push("/");
     });
   };
@@ -71,7 +78,7 @@ export default function EditPage() {
           value={editContent}
           onChange={(e) => setEditContent(e.target.value)}
         />
-        {editError && editError}
+        <EditError>{editError && editError}</EditError>
         <EditButton>編輯文章</EditButton>
       </form>
     </EditBlock>
